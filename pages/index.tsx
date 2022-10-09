@@ -1,9 +1,6 @@
-import React from 'react';
-import Head from 'next/head'
-import { QueryClient, QueryClientProvider } from "react-query";
-import App from "./_app"
-
-const queryClient = new QueryClient();
+import React from "react";
+import Head from "next/head";
+import App from "./_app";
 
 export default function Home() {
   return (
@@ -16,6 +13,6 @@ export default function Home() {
       <main>
         <App />
       </main>
-      </>
-  )
+    </>
+  );
 }

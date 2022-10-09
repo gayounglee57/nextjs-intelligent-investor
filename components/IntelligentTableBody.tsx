@@ -13,8 +13,6 @@ export const IntelligentTableBody = () => {
     if (e.key === "Enter") {
       setTickers([...tickers, e.target.value]);
       e.target.value = "";
-      // const data = await axios.get("/api/post");
-      // console.log('data', data);
     }
   };
 
