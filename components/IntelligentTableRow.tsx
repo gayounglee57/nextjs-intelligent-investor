@@ -22,7 +22,7 @@ function getOptions(symbol: string, url: string): AxiosRequestConfig<any> {
     params: { symbol },
     headers: {
       "x-rapidapi-host": "yh-finance.p.rapidapi.com",
-      "x-rapidapi-key": publicRuntimeConfig.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY, // // TODO: hide api key with Node BE, Next.js BE
+      "x-rapidapi-key": process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY, // // TODO: hide api key with Node BE, Next.js BE
     },
   };
 }
