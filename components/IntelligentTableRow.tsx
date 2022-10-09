@@ -10,6 +10,7 @@ const balanceSheetUrl =
   "https://yh-finance.p.rapidapi.com/stock/v2/get-balance-sheet";
 
 function getOptions(symbol: string, url: string): AxiosRequestConfig<any> {
+  console.log('process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY', process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY);
   return {
     method: "GET",
     url,
