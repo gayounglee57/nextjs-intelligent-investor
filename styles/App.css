@@ -1,0 +1,46 @@
+  body {
+    margin: 0;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-header {
+    background-color: #292929;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #d2af7c;
+  }
+  
+  .Error-boundary {
+    font-size: 12px;
+  }
+  
+  .MuiTableCell-root, .MuiFormLabel-root {
+    color: white;
+    vertical-align: bottom;
+  }
+  
+  .MuiInputBase-input, .MuiInput-input {
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  
+  .MuiTableContainer-root {
+    width: auto;
+    margin: 24px;
+  }
+  
+  .MuiTableCell-root {
+    text-align: left;
+  }
+  
+  .MuiInputBase-root::before, .MuiInputBase-root::after {
+    display: none;
+  }
+  

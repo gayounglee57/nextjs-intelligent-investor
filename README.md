@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Screener based on principles from The Intelligent Investor book. Built using NextJS.
