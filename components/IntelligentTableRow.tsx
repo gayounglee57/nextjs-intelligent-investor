@@ -11,6 +11,7 @@ const balanceSheetUrl =
 
 function getOptions(symbol: string, url: string): AxiosRequestConfig<any> {
   console.log('process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY', process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY);
+  console.log('process.env.NEXT_PUBLIC_REACT_APP_RAPID_API_KEY', process.env.REACT_APP_RAPID_API_KEY);
   return {
     method: "GET",
     url,
