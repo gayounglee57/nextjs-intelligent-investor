@@ -4,8 +4,6 @@ import { useQuery } from "react-query";
 import { IntelligentTableRowUI } from "./IntelligentTableRowUI";
 import { TransitionText } from "./TransitionText";
 
-// import { mockStatsData } from "../__tests__/mockStatsData";
-
 const statsUrl = "/api/stats";
 const balanceSheetUrl = "/api/balanceSheet";
 
@@ -31,12 +29,7 @@ function useBalanceSheet(symbol: string) {
   );
 }
 
-// function getMockData() {
-//   return mockStatsData;
-// }
-
 export const IntelligentTableRow = ({ ticker }) => {
-  // const statsData = getMockData();
   const {
     isLoading: isStatsLoading,
     error: statsError,

@@ -1,17 +1,17 @@
 import React from "react";
 
 interface IProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
-  
+
 interface IState {
-    error: string;
-    errorInfo: any;
+  error: string;
+  errorInfo: any;
 }
 
 export class ErrorBoundary extends React.Component<IProps, IState> {
   state: IState = {
-    error: '',
+    error: "",
     errorInfo: null,
   };
 
@@ -37,7 +37,6 @@ export class ErrorBoundary extends React.Component<IProps, IState> {
         </div>
       );
     }
-    // Normally, just render children
     return this.props.children;
   }
 }
