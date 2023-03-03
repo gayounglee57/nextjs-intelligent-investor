@@ -1,5 +1,4 @@
 import * as React from "react";
-import axios from "axios";
 
 import TableBody from "@mui/material/TableBody";
 import { IntelligentTableInput } from "./IntelligentTableInput";
@@ -19,11 +18,12 @@ export const IntelligentTableBody = () => {
   return (
     <ErrorBoundary>
       <TableBody>
-        {tickers &&
-          tickers.map((ticker) => (
-            <IntelligentTableRow key={ticker} ticker={ticker} />
-          ))}
-        <IntelligentTableInput handleKeyPress={handleKeyPress} />
+        {tickers.length > 0 && (
+          <IntelligentTableRow key={tickers[0]} ticker={tickers[0]} />
+        )}
+        {!(tickers.length > 0) && (
+          <IntelligentTableInput handleKeyPress={handleKeyPress} />
+        )}
       </TableBody>
     </ErrorBoundary>
   );
